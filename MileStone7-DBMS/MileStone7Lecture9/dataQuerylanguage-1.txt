@@ -1,0 +1,15 @@
+1 = for queries In database. we have two keywords:
+a =  (SELECT): use for if we want to select something from the (database):
+=> syntax for (SELECT) keywords:
+SELECT < set the table column names>
+=> we can select the (multiple) tables;using comma (,):like this:
+SELECT <column1,column2>
+
+
+
+b = (FROM): here we have to tell or define the (table-name):
+
+=> syntax of from is:
+
+FROM <table-name>;
+
