@@ -1,0 +1,6 @@
+// learn about (FILTERING):
+=> if we are simply getting the data from the database's (table):
+=> then this type of execution is know as (Resultset):
+=> but if put some (condition) on that (execution) statement or we say  on that (query):then that is know as (FILTERING):
+=> definition of FILTERING: SQL filters are used to (get) a specific subset of the data iteams from the database:the filters is an SQL (WHERE) clause that provides a set of comparisons that must be true in order for a data iteams to be returned:
+
