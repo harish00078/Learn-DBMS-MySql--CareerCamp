@@ -5,3 +5,7 @@
 => definition of FILTERING: SQL filters are used to (get) a specific subset of the data iteams from the database:the filters is an SQL (WHERE) clause that provides a set of comparisons that must be true in order for a data iteams to be returned:
 => if we only want the bank (braches) those had a (address) of (delhi):
 => for that we can use (filter) in our (query):with the help of (WHERE) function: 
+
+// OPERETORS:
+=> for repersenting (AFTER) through operators we can use the greater than (>) operator;
+=> for repersenting (BEFORE) through operators we can use the less than (<) operator;
