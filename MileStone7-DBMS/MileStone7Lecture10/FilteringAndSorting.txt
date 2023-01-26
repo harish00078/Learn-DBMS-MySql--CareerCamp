@@ -9,3 +9,14 @@
 // OPERETORS:
 => for repersenting (AFTER) through operators we can use the greater than (>) operator;
 => for repersenting (BEFORE) through operators we can use the less than (<) operator;
+
+
+// types of (FILTERING) operators:
+
+=> 1 = (IN) operator:the (IN) operator allows us to specifying multiple values in a (WHERE) clause.we can use multiple (OR) operators in the place of (IN) operator as well:
+
+=> 2 = (NOT-IN) operator: NOT-IN operator is the same as (IN) operator in syntax and it just negates the conditional:Means that (NOT-IN) operator will return (true) for only conditionals which are false for (IN) operator:basically (NOT-IN) operator work opposite to the (In) operator:
+
+=> 3 = (IS-NULL) operator: the (IS-NULL) operator is used to test for (EMPTY-VALUES) or we can say for (NULL-VALUES):
+
+=> 4 = (IS-NOT-NULL) operator: It is used to check for (non-EMPTY) values:
