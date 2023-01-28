@@ -24,8 +24,17 @@
 
 // (WILD-CARDS) :
 => WHAT ARE WILD-CARDS: they are used to (filter) the (strings):
+=> for USING (wild-cards) we have to use the (LIKE) FUNCTION: we can also use it without the (LIKE) FUNCTION:
+=> we also have to (provide) him: the ( column-name) in which column we want to find-out that (character):
 
 => there are two (WILD-CARDS):
 => 1 = (%):it is used to repersenting (zero) or (more) characters:
 => 2 = (-): it is used to repersenting a (single) characters:
 
+
+
+
+// here we learn about (SORTING):
+// definition OF (SORTING): SORTING is simply done USING the (ORDER BY) keyword which is used to (sort) the (Resultset) in (ascending) or (descending) order:
+=> by default we are USING the (ASC = ascending) order:
+=> we can gave it the (DESC = descending) order:
