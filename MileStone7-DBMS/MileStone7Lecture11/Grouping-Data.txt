@@ -1,0 +1,17 @@
+// here we learn about the (GROUPING-DATA):
+=> meaning of (GROUPING-DATA):GROUPING in sql is done by using (GROUP By) function or statement:
+=>(GROUP By) statement GROUPS rows that have the same values into the (one) rows or we can say into the (summary) rows:
+=> after using the (GROUP BY) clause,all the rows with the same values of the specified columns name will get summarized into a single row:
+
+
+=> we have (AGGREGATE) functions: for (GROUPING-DATA) in my (My-Sql):
+=> what are (AGGREGATE) functions: these are used to perform calculations on multiple values of a columns and return the result into a single value:
+=> types of (AGGREGATE) functions are:
+=> 1 = (COUNT()):- the number of rows retuned based on condition:for counting a particular value of (column) if it repeat again and again:
+=> 2 = (AVG()):- the average of the value is retuned in the selected column:
+=> 3 = (MAX()):- the maximum value of a column is returned:
+=> 4 = (MIN()):- the minimum value of a column is returned:
+=> 5 = (SUM()):- the sum  of the values in  a specified column is returned:
+
+=> general form of writing (GROUP) query:
+# SELECT column_name(s) FROM T_name WHERE condition GROUP BY column_name(s):
