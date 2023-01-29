@@ -13,5 +13,5 @@
 => 4 = (MIN()):- the minimum value of a column is returned:
 => 5 = (SUM()):- the sum  of the values in  a specified column is returned:
 
-=> general form of writing (GROUP) query:
+=> general form of writing (GROUP BY) query:
 # SELECT column_name(s) FROM T_name WHERE condition GROUP BY column_name(s):
