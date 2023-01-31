@@ -15,3 +15,5 @@
 
 => general form of writing (GROUP BY) query:
 # SELECT column_name(s) FROM T_name WHERE condition GROUP BY column_name(s):
+
+=> IMP = if we want to get  a (particular) value from the (GROUP BY) query: FOR that we can use the another (keyword) named as (HAVING):
