@@ -1,0 +1,64 @@
+// primary-key: 
+=> primary-key helps us to (uniquely-identify) tuples of a relation:it cannnot  be (null) and have (unique) values:
+=> each table has only one primary key. but a primary key can have one or more (columns) fields as part of the primary key:
+
+=> way we can create primary key:
+
+=> 1 = we can create primary key with the (column-name):LIKE
+
+# CREATE TABLE People(
+  // here we create (primary key) with in the (column):
+#   ID INT NOT NULL (primary key),
+#   LastName VARCHAR(255),
+#   FirstName VARCHAR(255),
+#   Address VARCHAR(255),
+#   City VARCHAR(30),
+# );
+
+=> 2 =  we can create (primary key) in the last of the all (columns):
+
+# CREATE TABLE People(
+#   PID INT NOT NULL,
+#   LastName VARCHAR(255),
+#   FirstName VARCHAR(255),
+#   Address VARCHAR(255),
+#   City VARCHAR(30),
+// here we create (primary key) in the last of all the (columns):
+#   PRIMARY KEY (PID)
+# );
+
+
+=> 3 = we can also define (two) primary key in the last of all the (columns):
+
+# CREATE TABLE People(
+#   PID INT NOT NULL,
+#   People_id INT NOT NULL,
+#   LastName VARCHAR(255),
+#   FirstName VARCHAR(255),
+#   Address VARCHAR(255),
+#   City VARCHAR(30),
+// here we create or define two primary keys at the end of the all the (columns):
+#   PRIMARY KEY (PID,PEOPLE_ID)
+# );
+
+
+=> 4 = we can also define the (primary key) differenlty: after be already (created) a table:
+
+# here we create table:
+# CREATE TABLE People(
+#   PID INT NOT NULL,
+#   LastName VARCHAR(255),
+#   FirstName VARCHAR(255),
+#   Address VARCHAR(255),
+#   City VARCHAR(30),
+# );
+
+// here we define the primary key differenlty from the table:with the help of (ALTER) keyword:
+# ALTER table people add primary key(PID):
+
+=> 5 = we can also delete the primary key:with the help of (ALTER) keyword:
+# we can use the (drop) propery of the (ALTER) keyword: for (deleting) the primary key:
+
+# ALTER TABLE PEOPLE drop primary key; 
+
+

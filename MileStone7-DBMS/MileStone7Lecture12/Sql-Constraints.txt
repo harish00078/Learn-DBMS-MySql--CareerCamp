@@ -1,0 +1,13 @@
+// here we learn about the (sql) constraints:
+=> constraints = constraints are the (rules) that we can apply on the (type of data) in a table:that is, we can specify the limit on the (type of data) that can be stored in a particular (column) in a table using (constraints):
+
+=> there are basically (six) types of (constraints):
+1 = (NOT NULL):
+2 = (PRIMARY KEY):
+3 = (FOREIGN KEY):
+4 = (UNIQUE):
+5 = (CHECK):
+6 = ((DEFAULT):
+
+=> HERE we learn about the last (three):(UNIQUE),(CHECK),(DEFAULT):BECAUSE about the (above three) we already studied about:
+1 = (UNIQUE):

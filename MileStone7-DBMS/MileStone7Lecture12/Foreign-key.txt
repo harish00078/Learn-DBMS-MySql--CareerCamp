@@ -1,0 +1,28 @@
+// foreign key:
+
+=> foreign-key: Foreign Key refers to the Primary Key of another table. Each table can have any number of foreign key(s). Lets us say we have a customer and account table:
+=> here we have (customer) table:
+
+# CREATE TABLE customer
+# (
+# id INT NOT NULL,
+# branch_id INT NOT NULL,
+# first_name VARCHAR(20),
+# last_name VARCHAR(20),
+# DOB INT,
+# gender CHAR(6),
+# PRIMARY KEY(id)
+# );
+
+=> here we have (account) table:
+
+# CREATE TABLE account
+# (
+# id INT NOT NULL,
+# balance INT,
+# customer_id INT NOT NULL,
+# PRIMARY KEY(id),
+// here we use (customer_id) as FOREIGN key:because (customer_id) is a primary-key in the (customer) table:
+// In customer table (customer_id) is named as (id):
+// those (id's) we used as (customer_id) in the (account) table:for creating a (connection) between the two tables: through (primary key) or (foreign key):
+# FOREIGN KEY(customer_id) REFERENCES customer(id) );
