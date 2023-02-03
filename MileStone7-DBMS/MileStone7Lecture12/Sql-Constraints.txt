@@ -10,4 +10,58 @@
 6 = ((DEFAULT):
 
 => HERE we learn about the last (three):(UNIQUE),(CHECK),(DEFAULT):BECAUSE about the (above three) we already studied about:
-1 = (UNIQUE):
+
+1 = (UNIQUE):UNIQUE constraints make sure that all the values in a column which is declared UNIQUE are different: it means that the values in any row of a column must not be repeated:
+=> multiple columns in a table can have a UNIQUE constraints:
+
+=> here we have one  (UNIQUE) constraints in a table:
+create table customer(
+id INT NOT NULL,
+name VARCHAR(255) NOT NULL,
+# HERE WE DEFINE THE (ID) AS A (UNIQUE) CONSTRAINTS:
+UNIQUE(id)
+);
+
+=> here we DEFINE the two constraints in a one table:
+create table customer(
+id INT NOT NULL,
+name VARCHAR(255) NOT NULL,
+# HERE WE DEFINE THE (ID) AND  (NAME) AS (UNIQUE) IN THE (CUSTOMER) TABLE:
+CONSTRAINT UNIQUE(id,name)
+);
+
+
+2 = (CHECK): the CHECK is used to put the limitations on the value range that we can put in a column:means that it helps to ensure that the values stored in a column meets a specific condition:
+
+=> here we use the (CHECK) constraints:
+create table account(
+account_id INT NOT NULL,
+balance INT NOT NULL,
+customer_id INT NOT NULL,
+# here we use the (check) constraint:for giving a condition to the (balance) column:
+CHECK (balance >= 3000)
+);
+
+
+3 = (DEFAULT): DEFAULT constraint set a DEFAULT value for a column:means that this constraint specifies a DEFAULT value for the column when no value is specified by the user:
+
+=> here we use (DEFAULT) CONSTRAINTS:
+=> let us say for all the accounts we want to have a balance of (100) when an account is added we can make sure of  this by using the (DEFAULT) constraint:basically we gave the DEFAULT value of (100) to every account that we have added:
+
+create table account(
+account_id INT NOT NULL,
+# HERE WE GAVE THE (DEFAULT) VALUE OF (100) TO EVERY  ACCOUNT:
+balance INT DEFAULT 100,
+CUSTOMER_ID INT NOT NULL
+);
+
+=> we can drop the DEFAULT constraint by using (drop) keyword:
+ALTER TABLE ACCOUNT
+# here we drop the default:
+ALTER balance drop DEFAULT;
+
+=> we can also (sparately) DEFINE the (default) value for a particular (column): with the helps of (ALTER) keyword.with one of its property or we can say its function named as (MODIFY):
+
+ALTER TABLE account
+# here we use (alter) keyword's: (modify) property:
+MODIFY balance DEFAULT 100;
