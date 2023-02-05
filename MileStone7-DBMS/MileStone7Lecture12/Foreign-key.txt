@@ -22,7 +22,8 @@
 # balance INT,
 # customer_id INT NOT NULL,
 # PRIMARY KEY(id),
-// here we use (customer_id) as FOREIGN key:because (customer_id) is a primary-key in the (customer) table:
+// here we use (customer_id) as FOREIGN key:because (ID) is a primary-key in the (customer) table:
 // In customer table (customer_id) is named as (id):
 // those (id's) we used as (customer_id) in the (account) table:for creating a (connection) between the two tables: through (primary key) or (foreign key):
+=> HERE WE CREATE between TWO KEYS through (REFERENCES) KEYWORD:
 # FOREIGN KEY(customer_id) REFERENCES customer(id) );

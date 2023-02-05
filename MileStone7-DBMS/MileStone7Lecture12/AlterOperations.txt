@@ -1,1 +1,72 @@
 // here we learn about the (ALTER) keyword:
+=> ALTER-table:The ALTER TABLE statement is used to add, delete, or modify columns in an existing table.
+=> The ALTER TABLE statement is also used to add and drop various constraints on an existing table.
+
+=> ALTER-operations:
+1 = ADD
+2 = CHANGE-column
+3 = modify
+4 = drop
+5 = RENAME
+
+
+=> how to use the (ALTER) operations:
+
+=> 1 = here we use (add) operation:
+# if we want to (add) new (column) in the table:for that we can  use the (add) operation of the (ALTER) keyword:
+# syntax for (add) operation:
+ALTER TABLE <table-name>
+ADD <column-name> <data-type>
+# example of (add) operation:
+ALTER table insurance
+ADD product_details VARCHAR(20)
+
+# => we can also (add) the new table after the particular table if we want:through the (AFTER) KEYWORD:
+ALTER table insurance
+ADD product_details VARCHAR(20)
+after product_type;
+
+
+
+=> 2 = here we use (modify) operation:
+# if we want to (modify) the  (column) of the table:for that we can  use the (modify) operation of the (ALTER) keyword:
+# syntax for (modify) operation:
+ALTER TABLE <table-name>
+modify column <column-name> <data-type>
+# example of (add) operation:
+# here we modify the (data-type) length of the (column):
+ALTER table insurance
+modify product_details VARCHAR(40);
+
+
+=> 3 = here we use (CHANGE-COLUMN) operation:
+# if we want to change the (old) column-name with the (new) column-name:for that we can use the (change-column) operation:
+# syntax:
+ALTER table <table-name>
+CHANGE COLUMN <OLD-COLUMN-NAME> <NEW-COLUMN-NAME> <DATA-TYPE>
+# EXAMPLE:
+ALTER table insurance
+change column product_details p_details VARCHAR(20);
+
+=> 4 = here we use (drop) operation:
+# if we want to drop the (column) of the (table) for that we can use the (drop) operation of the (alter) KEYWORD:
+# syntax:
+ALTER table <table-name>
+drop column <column-name>
+
+# for example:
+ALTER table insurance
+drop column p_details;
+
+=> 5 = here we use (RENAME) operation:
+# if we want to rename the (table) or the (column) of the table:for that we can use the (rename) operation:
+
+# example of rename the (table):
+ALTER table insurance
+rename to  insurance_temp;
+
+# example of rename the (column-name):
+# here we rename the (name) column to the (surname) column:
+ALTER table customers
+rename name to surname;
+
