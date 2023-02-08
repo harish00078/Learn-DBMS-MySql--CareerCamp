@@ -1,0 +1,15 @@
+# here we learn about the another (DML) operation:
+// UPDATE:It is used to UPDATE the data in the table:
+
+=> synax for the (UPDATE) operation:
+=> In this operation we have to define the (two) VALUES:
+1 = SET:means which (column)you want to put that VALUE or change that VALUE:
+2 = WHERE: means In which (row) did you want to (put) that VALUE:
+
+# here we (change) only one-value:with the help of (one-update) query operation: 
+UPDATE  <table-name> SET c_name = 'c' WHERE C_id = 2;
+
+# we can also change the (multiple-values):with the help of (one-update) query operation:
+=> syntax for that is:
+
+UPDATE <table-name> SET c3 = 'c',c4 = 'b' WHERE C_id = 1;

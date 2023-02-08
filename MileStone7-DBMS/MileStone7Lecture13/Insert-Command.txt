@@ -1,0 +1,18 @@
+# In this lecture we will learn about the (DML):
+// DML = data manipulation languages:or we can say modifying-data:
+// under (DML) we have  (four) operation that we can perform:
+=> 1 = INSERT: is used to INSERT data in the table:
+=> 2 = UPDATE: is used to UPDATE the data in the table:
+=> 3 = DELETE: is used when we want to (DELETE) the data from table:
+=> 4 = RENAME: is used when we want to (RENAME) any-thing on the table:
+
+// here we learn about (INSERT) operation:
+
+=> syntax for the (INSERT) operation:
+
+=> It for when we want to (INSERT) the (single-row) data in the table:
+INSERT INTO <table-name>(col1,col2,col3) VALUES(VALUES-col1,VALUES-col2,VALUES-col3);
+
+=> we can also (INSERT) the (multiple-row) data in the table at a particular time:
+INSERT INTO <table-name> (col1,col2,col3) VALUES(1,2,5),(3,6,7);
+
