@@ -1,0 +1,33 @@
+# here we learn about the another (DML) operation:
+
+// DELETE:it used to perform the (DELETE) operation on the (existing) table or database:
+
+=>  syntax for (DELETE) the one-row:
+
+DELETE from account WHERE balance = "200";
+
+=> syntax for (DELETE) all the rows from the table:
+-> 1 = this will only  (DELETE) the  rows of the (table) or we can say that the (data) of the (table):not the (table) itself:
+-> 2 = table will still remains there for the (further) use:
+
+DELETE from account;
+
+
+# there is another way:to delete the  (data) or (rows) in the (table or database):
+// if we want to delete the (row) from the (table) through the(column):
+// then we have to (disabled) the (safe-mode):
+=> syntax for disabling (safe-mode) is:
+
+SET SQL_SAFE_UPDATES = 0;
+
+// after disabling (safe-mode):know we can delete the (row) from the (table) through the (column):
+
+=> example:
+
+DELETE from Insurance_tamp1 WHERE year_of_launch  = "2020";
+
+
+//  after  deleting that (row):know we can again (enabled) the safe-mode:
+=> syntax for (enabling) the (safe-mode):
+
+SET SQL_SAFE_UPDATES = 1;
