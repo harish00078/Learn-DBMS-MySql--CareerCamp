@@ -1,0 +1,31 @@
+// here we see that who we can work on the  (delete) and (update) cascade:
+
+=> for that first we have to create the two (tables):
+
+
+// here we create our (first) table:
+
+=> first table is (Insurance):
+
+create table Insurance(
+  product_id Int,
+  customer_id Int,
+  product_name varchar(10),
+  product_type varchar(10),
+  year_of_launch year,
+  product_value decimal(10,3),
+  PRIMARY KEY(product_id),
+  FOREIGN KEY(customer_id)  REFEERENCES customer(id)
+);
+
+=> select * from customer;
+=> select * from Insurance;
+
+# here we update something: on (customer)table or we can call it (parent) table: and that will be show on the (insurance) table or we can call it (child) table as well:
+update customer SET id=33 where id = 3;
+
+
+# here we delete something: on (customer)table or we can call it (parent) table: and that will be show on the (insurance) table as well or we can call it (child) table as well:
+delete from customer where id = 33;
+
+

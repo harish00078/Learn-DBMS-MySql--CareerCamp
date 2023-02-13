@@ -1,0 +1,5 @@
+// here we learn about the (delete) and (update) cascade:
+
+=> (DELETE) cascade:this clause is used to delete multiple records from more than one table,linked through foreign key:
+
+=> (update) cascade: this clause is used to update multiple records from more than one table, linked through foreign key:
