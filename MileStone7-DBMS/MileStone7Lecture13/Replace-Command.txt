@@ -1,1 +1,20 @@
 // here we learn about the (REPLACE) command:
+=>REPLACE: it is used to update the already present tuple data in a relation:
+
+# replace command work with the (primary-key):
+IMP => when we use (REPLACE) query with the help of (where) clause in primary key  column:then the row present will get update:
+
+# replace command work without the  (primary-key):
+IMP => if there is no  reference of the primary key,then a new tuple entry will be added in the relation,with updated values:
+
+// syntax of (REPLACE) command:
+REPLACE INTO T_name(column_name(s)) values(value_list);
+
+
+
+// EXAMPLE of (REPLACE)command:
+
+select * from Insurance_temp1;
+
+# here we are basically adding the (values) in the (Insurance_temp1) table with the help of (Replace) command:
+REPLACE into Insurance_temp1(product_id,product_name,product_type,year_of_launch,product_value) values(6,'insure6','health','2021','6000.000');
