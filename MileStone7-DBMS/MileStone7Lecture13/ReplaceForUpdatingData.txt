@@ -1,0 +1,5 @@
+// here we learn about: that how can be (update) some values in the table with the help of (replace) command:
+
+=> we can do that with the help of (SET) keyword with(replace-into) statement:
+
+REPLACE INTO Insurance_temp1 SET product_id = 6, product_name = insure6;

@@ -1,0 +1,22 @@
+// here we learn about that how can be (manage) our (database):
+// or we can say that: how can be (handle) our (database):
+
+=> for creating new (database): we can use the command:
+
+CREATE DATABASE <DATABASE_name>;
+
+=> for (using-particular) database:we can use the (command):or we can say if we want to run the (queries) on the (particular) database:
+
+USE<DATABASE_name>;
+
+=> FOR (deleting-particular) database:we can use the (command):
+
+DROP DATABASE<DATABASE_name>;
+
+=> for (displaying) all the (databases) that we have created:we can use the (command):
+
+SHOW DATABASES;
+
+=> for (displaying) all the (tables) in the (particular) database:we can use the (command):
+
+SHOW  TABLES;
