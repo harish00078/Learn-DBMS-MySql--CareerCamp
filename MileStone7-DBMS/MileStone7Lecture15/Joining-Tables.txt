@@ -1,0 +1,13 @@
+// here we learn about the (joining-tables):
+=> joining_tables:join is an operation that exits in sql that helps us to combine (rows) from two or more tables based on a related column betweem them:
+
+// we have four types of joins:
+1 = INNER-join
+2 = OUTER-join:
+=> OUTER-join:further have (three) types:
+=> 1 = left-outer-join
+=> 2 = right-outer-join
+=> 3 = full-outer-join
+3 = CROSS-join
+4 = SELF-join
+ 

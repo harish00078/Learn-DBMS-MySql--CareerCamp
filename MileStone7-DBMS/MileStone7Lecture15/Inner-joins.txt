@@ -1,0 +1,33 @@
+// here we learn about the (INNER-joins):
+
+=> INNER-join: this returns a (resulting-table) that has matchintg values from both the tables or all the tables:
+
+=>(syntax) for INNER-join:
+
+=> IMP = In (inner-join) query:the (ON) keyword basically  define the (condition) for joining two or more tables:or we can say define that (on) which (behalf) we are connecting these tables:
+
+SELECT * FROM TableA INNER JOIN TableB ON TableA.column1 = TableB.column1;
+
+=> IMP = we can also write the column (names) with there (first) characters in the SELECT statement:like we can write the (customer.id) column as (c.id) in the SELECT statement:
+=> IMP = if we are defining the (column) as its (first) character in the SELECT statement:then we also has to define that (character) in the (FROM) statement of the (query):when we are defining the (table) name:
+=> we have to tell that the which character belongs to the which tables (column) named:
+=> we can do that with the help of (As) keyword:like
+we use (customer) AS (c) in the (query):
+
+
+
+// how can we create the (query) for the (INNER-join):
+=> for example:if we have (two) tables:
+=> 1 = customer;
+=> 2 = account;
+
+
+# here (ON) KEYword:define that through which  (condition) or (behalf) we are joining these (tables):
+
+SELECT c.id,c.first_name,c.last_name,c.gender,a.balance from customer AS c INNER JOIN account AS a ON c.id = a.customer.id;
+
+# how can we use the (inner-join) for executing some (query):
+=> for example:if we have to list out all the (customers) those having more than or equal to 1000 rupees as an account balance:
+
+# FOR giving condition to this (query) we can use the (WHERE) keyword or function:
+SELECT c.*,a.balance FROM customer as c INNER JOIN account AS a ON c.id = a.customer.id WHERE A.balance  >= 1000;
