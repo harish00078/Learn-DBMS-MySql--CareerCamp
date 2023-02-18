@@ -1,0 +1,20 @@
+// here we learn about  that:who can we use the (right) join:
+=> what is (right) join:this returns a resulting table that all the data from the  right table and the matched data from the left table:
+
+=> syntax for the (right) join:
+
+SELECT * FROM TableA right JOIN TableB on TableA.column1 = TableB.column1;
+
+=>here we are using the (right) join:
+=> for example if we have two tables:
+1 = customer;
+2 = brach;
+
+SELECT c.*,b.address,b.id FROM customer c right join brach b ON b.id = c.brach_id;
+
+
+// how can we use the (right) join:for the (query):
+=> for example if we have to list out all the customers who is having an account either in delhi and bangalore:
+
+
+SELECT c.*,b.address,b.id FROM customer c right join brach b ON b.id = c.brach_id WHERE b.address IN('delhi', 'bangalore');

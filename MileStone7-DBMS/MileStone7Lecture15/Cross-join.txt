@@ -1,0 +1,10 @@
+// here we learn about the (cross) join:
+=> what is cross join:this returns all the (cartesian) products of the data (present) in both tables:hence all possible variations are reflected in the output:
+
+
+=> syntax for the (cross) join:
+
+SELECT * FROM TableA cross join TableA;
+
+// here we are uisng the (cross) join:
+=> for example we have two tables:

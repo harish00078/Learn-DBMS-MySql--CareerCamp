@@ -1,0 +1,26 @@
+// here we learn that:how can we use the (left) join:
+=> (left) join is basically the one of the (type) of the (outer) join:
+=> what is (left) join: this returns a resulting table that all the data from the left table and the matched data from the right table:
+
+=> syntax of (left) join:
+
+SELECT * FROM TableA left join TableB on TableA.column1 = TableB.column1;
+
+
+=> use of (left) join:
+=> for example if we have (two) tables:
+=> transaction and account table: then how can we (implement) the (left) join (query) on these tables:
+
+
+=> here we write (query):for these two tables:
+# note = we can get all the elements or columns of the (particular) table:with the help of (.*):
+# note = for defining (character) to the (particular) table:we also have did not have to use the (AS)  keyword:we can simple write (account a):
+
+SELECT a.*,t.* FROM account a left join transaction ON a.id = t.account_id;
+
+
+
+=> how can we solve the (query) through the (left) join:
+=> for example:if we have to list out all accounts having transaction done between 2020-01-01 to 2021-01-01;
+
+SELECT a.*,t.* FROM account a left join transaction ON a.id = t.account_id WHERE t.date between '2020-01-01' and '2020-01-01';
