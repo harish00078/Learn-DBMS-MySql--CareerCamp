@@ -8,3 +8,10 @@ SELECT * FROM TableA cross join TableA;
 
 // here we are uisng the (cross) join:
 => for example we have two tables:
+1 = customer;
+2 = insurance;
+
+
+=> here we write (query):with the help of the (cross) join:
+
+SELECT i.*,c.id from insurance i cross join customer c;

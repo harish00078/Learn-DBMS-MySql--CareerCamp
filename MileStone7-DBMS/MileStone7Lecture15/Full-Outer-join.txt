@@ -1,0 +1,19 @@
+// here we learn about that:Full-outer-join:
+
+=> what is Full-outer-join:this returns a resulting table that contains all the data when there is a match  on left or right table data.it can be implemented using the (UNION) operation:
+
+// for example:if we have two tables:
+1 = account;
+2 = transactions;
+// It basically works:with the (UNION) operation:
+// so we have to (emulate) the (left join UNION right join):
+
+
+# here we have (left) join:
+SELECt a.*,t.* FROM account a left join transaction t ON t.account_id = a.id
+
+# here we put (union) operation between them:
+UNION
+
+# herer we have (right) join:
+SELECT a.*,t.* from account a right join transaction t ON t.account_id = a.id;

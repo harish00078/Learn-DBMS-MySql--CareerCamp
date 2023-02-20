@@ -1,0 +1,13 @@
+// here we learn about the (set)operations:
+
+=> what are (set) operations:Set operations are used to combine multiple (select) statements:
+
+=>there are mainly (four)types of (set) operations:
+1 = (union):
+2 = (union All);
+3 = (intersect);
+4 = (Minus);
+
+// syntax for the (set) operations:
+
+SELECT column(s) FROM table1 UNION SELECT column(s) FROM table2;

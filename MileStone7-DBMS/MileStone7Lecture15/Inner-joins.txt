@@ -1,6 +1,6 @@
 // here we learn about the (INNER-joins):
 
-=> INNER-join: this returns a (resulting-table) that has matchintg values from both the tables or all the tables:
+=> INNER-join: this returns a (resulting-table) that has matching values from both the tables or all the tables:
 
 =>(syntax) for INNER-join:
 

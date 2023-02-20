@@ -1,0 +1,12 @@
+// here we learn about the (self) join:
+=> what is (self) join:it is used to get the output from a particular table when the same table is (joined) to itself:or we can say it is basically use when we want the output from the (currently) using table In from of (table):
+
+=>syntax of (self) join:
+
+SELECT A.col_1,B.col_2 FROM TableA A,tableA B where A.col_name =B.col_name AND <condition>;
+
+
+// for example: if  we have a (table):
+1 = account:
+
+SELECT a1.id, a2.balance FROM account as a1 Inner join account as a2 ON a1.id = a2.id;
