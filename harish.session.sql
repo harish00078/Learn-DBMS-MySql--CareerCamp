@@ -27,6 +27,7 @@
 -- (now) function:
 -- SELECT NOW();
 
+
 -- we can also use (date-time) dataytypes:
 -- SELECT DATETIME():
 
